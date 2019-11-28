@@ -30,7 +30,6 @@ console.log(camelCase('hello world'));
 // Verlan
 const verlan = (string) => {
 	if (typeof string !== 'string' || !string)  return '';
-
 	return  string.split(" ").map(words => {
 		return words.split("").reverse().join("");
 	}).join(" ");
@@ -38,6 +37,12 @@ const verlan = (string) => {
 
 console.log(verlan('hello world'));
 
+// Yoda
+const yoda = (string) => {
+	if (typeof string !== 'string' || !string) return '';
+	return string.split(" ").reverse().join(" ");
+}
+console.log(yoda('Hello world'));
 
 
 
