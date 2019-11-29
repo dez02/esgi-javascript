@@ -6,13 +6,13 @@ const ucfirst = (string) => {
 console.log(ucfirst('hello world'));
 
 // Capitalize
-const capitalized = (string) => {
+const capitalize = (string) => {
 	if (typeof string !== 'string' || !string)  return '';
 	return  str = string.split(' ').map(item => {
 			return ucfirst(item)
 	}).join(" ");
 }
-console.log(capitalized('hello world'));
+console.log(capitalize('hello world'));
 
 // Camelcase
 const camelCase = (string) => {
